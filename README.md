@@ -35,7 +35,7 @@ Before running this application, make sure you have:
 2. **Navigate to the project directory**:
 
    ```bash
-   cd Chat_with_pdfs
+   cd PDF_Chat
    ```
 
 3. **Create a virtual environment** (recommended):
