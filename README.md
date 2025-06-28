@@ -2,6 +2,14 @@
 
 A Streamlit-based application that allows you to chat with your PDF documents using AI. The application uses local language models and embeddings to provide intelligent responses based on the content of your uploaded PDFs.
 
+## 📸 Screenshots
+
+<p align="center">
+  <img src="images/image.png" alt="PDF Chat Application Interface" width="800">
+  <br>
+  <em>Main application interface showing chat with PDF documents</em>
+</p>
+
 ## Features
 
 - 📄 **PDF Upload**: Upload multiple PDF documents
@@ -88,6 +96,12 @@ Before running this application, make sure you have:
 
 ## How It Works
 
+<p align="center">
+  <img src="images/workflow-diagram.png" alt="Application Workflow" width="600">
+  <br>
+  <em>High-level overview of how the application processes and responds to queries</em>
+</p>
+
 1. **Document Processing**: PDFs are converted to text and split into chunks
 2. **Embedding Generation**: Text chunks are converted to vector embeddings using sentence transformers
 3. **Vector Storage**: Embeddings are stored in a FAISS vector database for fast retrieval
@@ -97,6 +111,13 @@ Before running this application, make sure you have:
    - The local language model generates an answer based on the retrieved context
 
 ## Technical Stack
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.8+-blue.svg" alt="Python">
+  <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=flat&logo=streamlit&logoColor=white" alt="Streamlit">
+  <img src="https://img.shields.io/badge/LangChain-00FF00?style=flat&logo=langchain&logoColor=black" alt="LangChain">
+  <img src="https://img.shields.io/badge/Ollama-FF6B35?style=flat&logo=ollama&logoColor=white" alt="Ollama">
+</p>
 
 - **Frontend**: Streamlit
 - **PDF Processing**: PyPDF2
@@ -114,6 +135,9 @@ Chat_with_pdfs/
 ├── app.py              # Main Streamlit application
 ├── htmlTemplates.py    # CSS styles and HTML templates
 ├── README.md          # This file
+├── images/            # Screenshots and diagrams
+│   ├── app-screenshot.png
+│   └── workflow-diagram.png
 └── venv/              # Virtual environment (created during setup)
 ```
 
